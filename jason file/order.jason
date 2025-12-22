@@ -1,0 +1,70 @@
+{
+  "orders": [
+    {
+      "order_id": 101,
+      "customer_name": "Alice",
+      "dishes": ["Pizza", "Burger"],
+      "timestamp": "2025-12-22T12:30:00"
+    },
+    {
+      "order_id": 102,
+      "customer_name": "Bob",
+      "dishes": ["Pasta", "Biryani"],
+      "timestamp": "2025-12-22T12:35:00"
+    },
+    {
+      "order_id": 103,
+      "customer_name": "Charlie",
+      "dishes": ["Sandwich", "Pizza"],
+      "timestamp": "2025-12-22T12:40:00"
+    }
+  ],
+  "customers": [
+    {
+      "name": "Alice",
+      "preferences": ["Pizza", "Pasta"],
+      "order_history": [101]
+    },
+    {
+      "name": "Bob",
+      "preferences": ["Biryani", "Burger"],
+      "order_history": [102]
+    },
+    {
+      "name": "Charlie",
+      "preferences": ["Sandwich", "Pizza"],
+      "order_history": [103]
+    }
+  ],
+  "menu": [
+    {"name": "Pizza", "price": 8.99, "category": "Fast Food", "ingredients": ["Cheese", "Tomato"]},
+    {"name": "Burger", "price": 5.99, "category": "Fast Food", "ingredients": ["Beef", "Lettuce"]},
+    {"name": "Pasta", "price": 7.99, "category": "Italian", "ingredients": ["Tomato", "Cheese"]},
+    {"name": "Biryani", "price": 9.99, "category": "Indian", "ingredients": ["Rice", "Chicken"]},
+    {"name": "Sandwich", "price": 4.99, "category": "Fast Food", "ingredients": ["Bread", "Cheese"]}
+  ],
+  "dish_ratings": [
+    {"name": "Pizza", "rating": 5, "orders_count": 120},
+    {"name": "Burger", "rating": 4, "orders_count": 80},
+    {"name": "Pasta", "rating": 3, "orders_count": 50},
+    {"name": "Biryani", "rating": 5, "orders_count": 90},
+    {"name": "Sandwich", "rating": 4, "orders_count": 60}
+  ],
+  "delivery_locations": [
+    {"id": 0, "name": "Restaurant"},
+    {"id": 1, "name": "Area 1"},
+    {"id": 2, "name": "Area 2"},
+    {"id": 3, "name": "Area 3"},
+    {"id": 4, "name": "Area 4"}
+  ],
+  "delivery_distances": [
+    {"src": 0, "dest": 1, "time": 6},
+    {"src": 0, "dest": 2, "time": 7},
+    {"src": 1, "dest": 2, "time": 8},
+    {"src": 1, "dest": 3, "time": 5},
+    {"src": 1, "dest": 4, "time": 4},
+    {"src": 2, "dest": 3, "time": 3},
+    {"src": 2, "dest": 4, "time": 9},
+    {"src": 3, "dest": 1, "time": 2}
+  ]
+}
