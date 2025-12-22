@@ -1,0 +1,29 @@
+{
+  "bins": [
+    {"id": 1, "location": "Zone A", "fill_level": 75, "last_update": "2025-12-22T09:00:00"},
+    {"id": 2, "location": "Zone B", "fill_level": 40, "last_update": "2025-12-22T09:05:00"},
+    {"id": 3, "location": "Zone C", "fill_level": 90, "last_update": "2025-12-22T09:10:00"},
+    {"id": 4, "location": "Zone D", "fill_level": 20, "last_update": "2025-12-22T09:15:00"}
+  ],
+  "trucks": [
+    {"id": "T1", "current_location": "Zone A", "capacity": 100},
+    {"id": "T2", "current_location": "Zone C", "capacity": 120}
+  ],
+  "historical_fill_levels": [
+    {"bin_id": 1, "date": "2025-12-20", "fill_level": 65},
+    {"bin_id": 2, "date": "2025-12-20", "fill_level": 30},
+    {"bin_id": 3, "date": "2025-12-20", "fill_level": 85},
+    {"bin_id": 4, "date": "2025-12-20", "fill_level": 15}
+  ],
+  "alerts": [
+    {"bin_id": 3, "threshold": 85, "alert_type": "Overflow"},
+    {"bin_id": 1, "threshold": 80, "alert_type": "High Fill Level"}
+  ],
+  "roads": [
+    {"from": "Zone A", "to": "Zone B", "distance": 5},
+    {"from": "Zone A", "to": "Zone C", "distance": 10},
+    {"from": "Zone B", "to": "Zone C", "distance": 4},
+    {"from": "Zone B", "to": "Zone D", "distance": 8},
+    {"from": "Zone C", "to": "Zone D", "distance": 3}
+  ]
+}
