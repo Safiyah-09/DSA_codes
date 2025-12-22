@@ -1,0 +1,78 @@
+{
+  "inventory": [
+    {
+      "SKU": "P001",
+      "name": "Milk",
+      "category": "Dairy",
+      "price": 2.5,
+      "quantity": 50,
+      "min_quantity": 20,
+      "max_quantity": 100,
+      "expiry_date": "2025-12-28",
+      "sales_count": 120,
+      "rating": 4.5
+    },
+    {
+      "SKU": "P002",
+      "name": "Eggs",
+      "category": "Poultry",
+      "price": 3.0,
+      "quantity": 200,
+      "min_quantity": 50,
+      "max_quantity": 300,
+      "expiry_date": "2025-12-26",
+      "sales_count": 250,
+      "rating": 4.7
+    },
+    {
+      "SKU": "P003",
+      "name": "Bread",
+      "category": "Bakery",
+      "price": 1.5,
+      "quantity": 100,
+      "min_quantity": 30,
+      "max_quantity": 200,
+      "expiry_date": "2025-12-24",
+      "sales_count": 180,
+      "rating": 4.2
+    },
+    {
+      "SKU": "P004",
+      "name": "Apples",
+      "category": "Fruits",
+      "price": 0.8,
+      "quantity": 150,
+      "min_quantity": 40,
+      "max_quantity": 200,
+      "expiry_date": "2025-12-30",
+      "sales_count": 90,
+      "rating": 4.6
+    },
+    {
+      "SKU": "P005",
+      "name": "Yogurt",
+      "category": "Dairy",
+      "price": 1.0,
+      "quantity": 80,
+      "min_quantity": 20,
+      "max_quantity": 150,
+      "expiry_date": "2025-12-27",
+      "sales_count": 75,
+      "rating": 4.3
+    }
+  ],
+  "checkout_queue": [
+    {
+      "customer_id": "C001",
+      "arrival_time": "2025-12-22T09:00:00"
+    },
+    {
+      "customer_id": "C002",
+      "arrival_time": "2025-12-22T09:05:00"
+    },
+    {
+      "customer_id": "C003",
+      "arrival_time": "2025-12-22T09:10:00"
+    }
+  ]
+}
