@@ -1,0 +1,93 @@
+{
+  "patients": [
+    {
+      "id": 101,
+      "name": "John Doe",
+      "priority": "high",
+      "age": 45,
+      "symptoms": "fever,cough"
+    },
+    {
+      "id": 102,
+      "name": "Jane Smith",
+      "priority": "normal",
+      "age": 30,
+      "symptoms": "headache,nausea"
+    },
+    {
+      "id": 103,
+      "name": "Alice Johnson",
+      "priority": "high",
+      "age": 60,
+      "symptoms": "chest pain"
+    }
+  ],
+  
+  "appointments": [
+    {
+      "appointment_id": 201,
+      "patient_id": 101,
+      "time": "09:00"
+    },
+    {
+      "appointment_id": 202,
+      "patient_id": 102,
+      "time": "09:30"
+    },
+    {
+      "appointment_id": 203,
+      "patient_id": 103,
+      "time": "10:00"
+    }
+  ],
+
+  "doctors": [
+    {
+      "id": 301,
+      "name": "Dr. A",
+      "department": "Cardiology",
+      "assigned_shift": "Morning"
+    },
+    {
+      "id": 302,
+      "name": "Dr. B",
+      "department": "Orthopedics",
+      "assigned_shift": "Morning"
+    },
+    {
+      "id": 303,
+      "name": "Dr. C",
+      "department": "Neurology",
+      "assigned_shift": "Evening"
+    }
+  ],
+
+  "insurance": [
+    {
+      "policy_number": "INS1001",
+      "patient_id": 101,
+      "expiry": "2026-05-01"
+    },
+    {
+      "policy_number": "INS1002",
+      "patient_id": 102,
+      "expiry": "2025-12-31"
+    }
+  ],
+
+  "analytics": {
+    "daily_patient_count": [5, 8, 7, 10],
+    "daily_bills": [5000, 7000, 6500, 8000],
+    "daily_tests": [15, 20, 18, 25]
+  },
+
+  "hospital_graph": {
+    "nodes": ["Room1", "Room2", "Room3", "Ward1"],
+    "edges": [
+      {"from": "Room1", "to": "Room2", "distance": 5},
+      {"from": "Room2", "to": "Room3", "distance": 7},
+      {"from": "Room1", "to": "Ward1", "distance": 10},
+      {"from": "Room3", "to": "Ward1", "distance": 3}
+    ]
+  }
+}
